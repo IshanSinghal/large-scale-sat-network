@@ -1,0 +1,13 @@
+- hosts: docker_hosts1[1:]
+  gather_facts: no
+  remote_user: root
+  tasks:
+  - name: test range hosts
+    shell: ping -c 2 f04-h17-b01-5039ms.rdu2.scalelab.redhat.com
+- hosts: docker_hosts2
+  gather_facts: no
+  remote_user: root
+  tasks:
+  - name: test range hosts
+    shell: ping -c 2 f04-h17-b01-5039ms.rdu2.scalelab.redhat.com
+

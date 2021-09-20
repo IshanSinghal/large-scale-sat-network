@@ -1,0 +1,5 @@
+ansible-playbook -i inventory.ini t1_clean.yaml -vv
+ansible-playbook -i inventory.ini t2_netupdate.yaml -vv
+ansible-playbook -i inventory.ini t3_netup.yaml -vv
+ansible-playbook -i inventory.ini t4_lineinfile.yaml -vv
+

@@ -1,0 +1,19 @@
+- hosts: docker_hosts1
+  gather_facts: no
+  remote_user: root
+  tasks:
+  - name: run clean up interface script
+    command: ./clean-interfaces.sh --disable --nuke
+- hosts: docker_hosts2
+  gather_facts: no
+  remote_user: root
+  tasks:
+  - name: run clean up interface script
+    command: ./clean-interfaces.sh --disable --nuke
+- hosts: docker_hosts3
+  gather_facts: no
+  remote_user: root
+  tasks:
+  - name: run clean up interface script
+    command: ./clean-interfaces.sh --disable --nuke
+

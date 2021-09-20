@@ -1,0 +1,7 @@
+- hosts: all
+  gather_facts: no
+  remote_user: root
+  tasks:
+  - name: make sure the network is up
+    command:  nmcli connection up enp1s0f0
+
